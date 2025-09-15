@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# persian
+# peRsian <img src="man/figures/logo.png" width="120" align="right" />
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -10,18 +10,18 @@ The goal of persian is to …
 
 ## Installation
 
-You can install the development version of persian from
+You can install the development version of peRsian from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("pak")
-pak::pak("jansim/persian")
+pak::pak("jansim/peRsian")
 ```
 
 ## Usage
 
 ``` r
-library(persian)
+library(peRsian)
 
 names(persian_palettes)
 #> [1] "pattern" "vase"    "floral"
