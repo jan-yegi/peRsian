@@ -1,6 +1,6 @@
 #' @export
 persian_palettes <- list(
-  vase_carpet = c("#610115", "#a17660", "#061721", "#4b433a", "#e8e4e5")
+  vase = c("#610115", "#a17660", "#061721", "#4b433a", "#e8e4e5")
 )
 
 #' A Palette Generator Based on Persian Art
