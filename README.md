@@ -24,7 +24,7 @@ pak::pak("jansim/persian")
 library(persian)
 
 names(persian_palettes)
-#> [1] "vase"   "floral"
+#> [1] "pattern" "vase"    "floral"
 
 persian_palette(names(persian_palettes)[1])
 ```
@@ -32,6 +32,29 @@ persian_palette(names(persian_palettes)[1])
 <img src="man/figures/README/fig-example-1.png" width="100%" />
 
 ## Palettes
+
+### Pattern
+
+<img align="left" alt="Image of a Floral Carpet" src="man/figures/pattern.jpg" height="300">
+
+A small quadratic carpet with a rich, traditional design. The piece
+features a striking color palette dominated by deep navy blue, warm
+golden yellow, and burgundy red, with accents of white and teal. The
+central motif is a large, symmetrical medallion in navy blue that
+resembles a stylized star or cross pattern. This central design is
+outlined in white and burgundy and contains smaller geometric elements
+within it. The medallion sits on a golden yellow background field.
+Surrounding the central design is an ornate border system with multiple
+bands. The main border features repeating geometric patterns in burgundy
+red with cross-like motifs in various colors including white, teal, and
+yellow. The border design shows the characteristic stepped or angular
+patterns common in traditional carpet weaving.
+
+``` r
+persian_palette("pattern")
+```
+
+<img src="man/figures/README/fig-unnamed-chunk-2-1.png" width="100%" />
 
 ### Vase
 
@@ -51,7 +74,7 @@ commercial workshops that created high-quality carpets like this one.
 persian_palette("vase")
 ```
 
-<img src="man/figures/README/fig-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README/fig-unnamed-chunk-3-1.png" width="100%" />
 
 <https://www.metmuseum.org/art/collection/search/452187>
 
@@ -71,7 +94,7 @@ among the finest produced in Iran during this period.
 persian_palette("floral")
 ```
 
-<img src="man/figures/README/fig-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README/fig-unnamed-chunk-4-1.png" width="100%" />
 
 <https://www.metmuseum.org/art/collection/search/452190>
 

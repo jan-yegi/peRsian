@@ -1,5 +1,6 @@
 #' @export
 persian_palettes <- list(
+  pattern = c("#cd9553", "#0d0f1b", "#fff3d0", "#d73b2a", "#680309", "#96906e", "#5e7c7d"),
   vase = c("#610115", "#a17660", "#061721", "#4b433a", "#e8e4e5"),
   floral = c("#795e3f", "#131519", "#2a3f3e", "#532d23", "#7f4a31")
 )
