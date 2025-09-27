@@ -21,7 +21,7 @@ persian_palette <- function(name, n, type = c("discrete", "continuous")) {
 
   pal <- persian_palettes[[name]]
   if (is.null(pal))
-    stop("Palette not found.")
+    stop(paste0("Palette not found: ", name))
 
   if (missing(n)) {
     n <- length(pal)
