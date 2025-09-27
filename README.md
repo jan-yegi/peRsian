@@ -54,7 +54,7 @@ patterns common in traditional carpet weaving.
 persian_palette("pattern")
 ```
 
-<img src="man/figures/README/fig-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README/fig-pattern-1.png" width="100%" />
 
 ### Roses
 
@@ -66,7 +66,7 @@ persian_palette("pattern")
 persian_palette("roses")
 ```
 
-<img src="man/figures/README/fig-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README/fig-roses-1.png" width="100%" />
 
 ### Vase
 
@@ -86,7 +86,7 @@ commercial workshops that created high-quality carpets like this one.
 persian_palette("vase")
 ```
 
-<img src="man/figures/README/fig-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README/fig-vase-1.png" width="100%" />
 
 <https://www.metmuseum.org/art/collection/search/452187>
 
@@ -106,7 +106,7 @@ among the finest produced in Iran during this period.
 persian_palette("floral")
 ```
 
-<img src="man/figures/README/fig-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README/fig-floral-1.png" width="100%" />
 
 <https://www.metmuseum.org/art/collection/search/452190>
 
