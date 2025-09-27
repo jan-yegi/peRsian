@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of persian is to …
+A collection of color palettes inspired by persian carpets.
 
 ## Installation
 
