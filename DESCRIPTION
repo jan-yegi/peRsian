@@ -1,9 +1,10 @@
 Package: peRsian
 Title: A Collection of Color Palettes Inspired by Persian Carpets.
 Version: 0.0.0.9000
-Authors@R:
-    person("Jan", "Simson", , "persian-pkg@simson.io", role = c("aut", "cre")),
-    person("Yeganeh", "Khazaei", , "persian-pkg@simson.io", role = c("aut"))
+Authors@R: c(
+        person("Jan", "Simson", , "persian-pkg@simson.io", role = c("aut", "cre")),
+        person("Yeganeh", "Khazaei", , "persian-pkg@simson.io", role = c("aut"))
+    )
 Description: This package provides a collection of color palettes inspired by the intricate designs and rich colors of Persian carpets.
 License: MIT + file LICENSE
 Encoding: UTF-8
