@@ -76,6 +76,18 @@ persian_palette("roses")
 persian_palette("medallion")
 ```
 
+### Yegi
+
+<img align="left" alt="Image of Yegi with a carpet she bought in Hamburg" src="man/figures/yegi.jpg" height="300">
+<img align="right" alt="Image of the carpet bought in Hamburg" src="man/figures/yegi_carpet.jpg" height="300">
+
+...
+
+
+```{r yegi}
+persian_palette("yegi")
+```
+
 ### Vase
 
 <img align="left" alt="Image of a Vase Carpet" src="man/figures/vase.jpg" height="300">

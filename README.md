@@ -24,7 +24,7 @@ pak::pak("jansim/peRsian")
 library(peRsian)
 
 names(persian_palettes)
-#> [1] "pattern"   "roses"     "medallion" "vase"      "floral"
+#> [1] "pattern"   "roses"     "medallion" "yegi"      "vase"      "floral"
 
 persian_palette(names(persian_palettes)[1])
 ```
@@ -79,6 +79,19 @@ persian_palette("medallion")
 ```
 
 <img src="man/figures/README/fig-medallion-1.png" width="100%" />
+
+### Yegi
+
+<img align="left" alt="Image of Yegi with a carpet she bought in Hamburg" src="man/figures/yegi.jpg" height="300">
+<img align="right" alt="Image of the carpet bought in Hamburg" src="man/figures/yegi_carpet.jpg" height="300">
+
+…
+
+``` r
+persian_palette("yegi")
+```
+
+<img src="man/figures/README/fig-yegi-1.png" width="100%" />
 
 ### Vase
 
