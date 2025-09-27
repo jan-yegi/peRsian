@@ -24,7 +24,7 @@ pak::pak("jansim/peRsian")
 library(peRsian)
 
 names(persian_palettes)
-#> [1] "pattern" "roses"   "vase"    "floral"
+#> [1] "pattern"   "roses"     "medallion" "vase"      "floral"
 
 persian_palette(names(persian_palettes)[1])
 ```
@@ -67,6 +67,18 @@ persian_palette("roses")
 ```
 
 <img src="man/figures/README/fig-roses-1.png" width="100%" />
+
+### Medallion
+
+<img align="left" alt="Image of a carpet fragment featuring a decorated medallion in its center" src="man/figures/medallion.jpg" height="300">
+
+…
+
+``` r
+persian_palette("medallion")
+```
+
+<img src="man/figures/README/fig-medallion-1.png" width="100%" />
 
 ### Vase
 

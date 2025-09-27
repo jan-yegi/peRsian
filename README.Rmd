@@ -65,6 +65,17 @@ persian_palette("pattern")
 persian_palette("roses")
 ```
 
+### Medallion
+
+<img align="left" alt="Image of a carpet fragment featuring a decorated medallion in its center" src="man/figures/medallion.jpg" height="300">
+
+...
+
+
+```{r medallion}
+persian_palette("medallion")
+```
+
 ### Vase
 
 <img align="left" alt="Image of a Vase Carpet" src="man/figures/vase.jpg" height="300">

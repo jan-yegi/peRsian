@@ -2,6 +2,7 @@
 persian_palettes <- list(
   pattern = c("#cd9553", "#0d0f1b", "#fff3d0", "#d73b2a", "#680309", "#96906e", "#5e7c7d"),
   roses = c("#ecded2", "#d7aa9f", "#e7696e", "#cdddca", "#698d7d", "#476168", "#6a4c56", "#5e1d27"),
+  medallion = c("#b4c7e3", "#2a7cbc", "#042141", "#e9fafd", "#d19d39", "#325f6b", "#6f0701", "#df6f3f"),
   vase = c("#610115", "#a17660", "#061721", "#4b433a", "#e8e4e5"),
   floral = c("#795e3f", "#131519", "#2a3f3e", "#532d23", "#7f4a31")
 )
