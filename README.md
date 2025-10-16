@@ -25,7 +25,8 @@ pak::pak("jansim/peRsian")
 library(peRsian)
 
 names(persian_palettes)
-#> [1] "pattern"   "roses"     "medallion" "yegi"      "vase"      "floral"
+#>  [1] "fery"     "tehran"   "hamburg"  "isfahan"  "munich"   "leyli"   
+#>  [7] "seasons"  "abbas"    "reyhaneh" "vase"     "floral"
 
 persian_palette(names(persian_palettes)[1])
 ```
@@ -34,9 +35,33 @@ persian_palette(names(persian_palettes)[1])
 
 ## ~~Palettes~~ Carpets
 
-### Pattern
+### Tehran
 
-<img align="left" alt="Image of a Carpet with a central Pattern" src="man/figures/pattern.jpg" height="300">
+<img align="left" alt="Image of a Carpet feauturing vases filled with roses" src="man/figures/tehran.jpg" height="300">
+
+…
+
+``` r
+persian_palette("tehran")
+```
+
+<img src="man/figures/README/fig-roses-1.png" width="100%" />
+
+### Fery 🐔
+
+<img align="left" alt="Image of a carpet fragment featuring a decorated medallion in its center" src="man/figures/fery.jpg" height="300">
+
+…
+
+``` r
+persian_palette("fery")
+```
+
+<img src="man/figures/README/fig-medallion-1.png" width="100%" />
+
+### Munich
+
+<img align="left" alt="Image of a Carpet with a central Pattern" src="man/figures/munich.jpg" height="300">
 
 A small quadratic carpet with a rich, traditional design. The piece
 features a striking color palette dominated by deep navy blue, warm
@@ -52,47 +77,22 @@ yellow. The border design shows the characteristic stepped or angular
 patterns common in traditional carpet weaving.
 
 ``` r
-persian_palette("pattern")
+persian_palette("munich")
 ```
 
-<img src="man/figures/README/fig-pattern-1.png" width="100%" />
+<img src="man/figures/README/fig-munich-1.png" width="100%" />
 
-### Roses
+### Hamburg
 
-<img align="left" alt="Image of a Carpet feauturing vases filled with roses" src="man/figures/roses.jpg" height="300">
+<img align="left" alt="Image of the carpet bought in Hamburg" src="man/figures/hamburg.jpg" height="300">
 
 …
 
 ``` r
-persian_palette("roses")
+persian_palette("hamburg")
 ```
 
-<img src="man/figures/README/fig-roses-1.png" width="100%" />
-
-### Medallion
-
-<img align="left" alt="Image of a carpet fragment featuring a decorated medallion in its center" src="man/figures/medallion.jpg" height="300">
-
-…
-
-``` r
-persian_palette("medallion")
-```
-
-<img src="man/figures/README/fig-medallion-1.png" width="100%" />
-
-### Yegi
-
-<img align="left" alt="Image of Yegi with a carpet she bought in Hamburg" src="man/figures/yegi.jpg" height="300">
-<img align="right" alt="Image of the carpet bought in Hamburg" src="man/figures/yegi_carpet.jpg" height="300">
-
-…
-
-``` r
-persian_palette("yegi")
-```
-
-<img src="man/figures/README/fig-yegi-1.png" width="100%" />
+<img src="man/figures/README/fig-hamburg-1.png" width="100%" />
 
 ### Vase
 
@@ -135,6 +135,11 @@ persian_palette("floral")
 <img src="man/figures/README/fig-floral-1.png" width="100%" />
 
 <https://www.metmuseum.org/art/collection/search/452190>
+
+## Gallery
+
+<img align="left" alt="Image of a carpet store in Hamburg" src="man/figures/gallery_hamburg_1.jpg" height="500">
+<img align="left" alt="Image of a aperson holding up a carpet in Hamburg" src="man/figures/gallery_hamburg_2.jpg" height="500">
 
 ## Acknowledgements
 
