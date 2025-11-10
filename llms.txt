@@ -28,7 +28,7 @@ You can install the development version of peRsian from
 
 ``` r
 # install.packages("pak")
-pak::pak("jansim/peRsian")
+pak::pak("jan-yegi/peRsian")
 ```
 
 ## Usage
