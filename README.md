@@ -57,7 +57,7 @@ persian_palette(names(persian_palettes)[1])
 
 ### Tehran
 
-<img align="left" alt="Image of a Carpet feauturing vases filled with roses" src="man/figures/tehran.jpg" height="300">
+<img align="left" alt="Image of a Carpet feauturing vases filled with roses" src="man/figures/tehran.jpg" width="250">
 
 A girl in hijab standing before a Persian carpet at the Carpet Museum of
 Iran in Tehran (circa 2015). Much has changed since then. After months
@@ -76,7 +76,7 @@ persian_palette("tehran")
 
 ### Pooran
 
-<img align="right" alt="" src="man/figures/pooran.jpg" height="300">
+<img align="right" alt="" src="man/figures/pooran.jpg" width="250">
 
 From Namin, Ardabil, this kilim tells a world in threads — animals,
 people, gestures, even the number of fingers carefully woven into each
@@ -94,7 +94,7 @@ persian_palette("pooran")
 
 ### Fery 🐔
 
-<img align="left" alt="Image of a carpet fragment repurposed as a cushion" src="man/figures/fery.jpg" height="300">
+<img align="left" alt="Image of a carpet fragment repurposed as a cushion" src="man/figures/fery.jpg" width="250">
 
 This vintage handwoven cushion brings new life to an antique wool rug
 more than half a century old, carefully restored for continued use.
@@ -113,7 +113,7 @@ persian_palette("fery")
 
 ### Leyli
 
-<img align="right" alt="Photo of a large carpet draped in a museum, featuring a floral scene with dancing people" src="man/figures/leyli.jpg" height="300">
+<img align="right" alt="Photo of a large carpet draped in a museum, featuring a floral scene with dancing people" src="man/figures/leyli.jpg" width="250">
 
 This carpet from the Tehran Carpet Museum feels like a celebration
 frozen in time. It’s bursting with flowers, colour, and movement - birds
@@ -134,7 +134,7 @@ persian_palette("leyli")
 
 ### Munich
 
-<img align="left" alt="Image of a Carpet with a central Pattern" src="man/figures/munich.jpg" height="300">
+<img align="left" alt="Image of a Carpet with a central Pattern" src="man/figures/munich.jpg" width="250">
 
 What could be a good gift for my best friend as a keepsake from Iran?
 Obviously, a handwoven Persian rug.
@@ -156,7 +156,7 @@ persian_palette("munich")
 
 ### Isfahan
 
-<img align="right" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.jpg" height="300">
+<img align="right" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.jpg" width="250">
 
 On a trip to Isfahan, Naeemeh and I wandered through Naqsh-e Jahan
 Square — that magical place surrounded by little shops and bazaars, full
@@ -176,7 +176,7 @@ persian_palette("isfahan")
 
 ### Hamburg
 
-<img align="left" alt="Image of the carpet bought in Hamburg" src="man/figures/hamburg.jpg" height="300">
+<img align="left" alt="Image of the carpet bought in Hamburg" src="man/figures/hamburg.jpg" width="250">
 
 Hamburg, March. A surprisingly windless, cloudy-grey kind of day —
 basically, as good as it gets there. Wandering through the city’s tiny
@@ -197,7 +197,7 @@ persian_palette("hamburg")
 
 ### Hooshang
 
-<img align="right" alt="" src="man/figures/hooshang.jpg" height="300">
+<img align="right" alt="" src="man/figures/hooshang.jpg" width="250">
 
 Handwoven in Hamedan, western Iran, using handspun wool and all-natural
 dyes. Among pictorial carpets, those depicting Hooshang Shahi hold a
@@ -222,7 +222,7 @@ persian_palette("hooshang")
 
 ### Tabriz
 
-<img align="left" alt="" src="man/figures/tabriz.jpg" height="300">
+<img align="left" alt="" src="man/figures/tabriz.jpg" width="250">
 
 This stunning carpet, called “The Four Seasons,” was woven in Tabriz,
 one of Iran’s most renowned carpet-weaving cities. Its design tells the
@@ -245,7 +245,7 @@ persian_palette("tabriz")
 
 ### Abbas
 
-<img align="right" alt="" src="man/figures/abbas.jpg" height="300">
+<img align="right" alt="" src="man/figures/abbas.jpg" width="250">
 
 At the centre sits Shah Abbas I, commonly known as Abbas the Great, the
 Safavid ruler whose reign in the 17th century marked one of the
@@ -261,7 +261,7 @@ persian_palette("abbas")
 
 ### Reyhaneh
 
-<img align="left" alt="" src="man/figures/reyhaneh.jpg" height="300">
+<img align="left" alt="" src="man/figures/reyhaneh.jpg" width="250">
 
 This carpet is a perfect example of how Persian rugs bring soul, warmth,
 colour, and life into the spaces we live in. In Iran, having carpets at
@@ -280,7 +280,7 @@ persian_palette("reyhaneh")
 
 ### Berlin
 
-<img align="right" alt="" src="man/figures/berlin.jpg" height="300">
+<img align="right" alt="" src="man/figures/berlin.jpg" width="250">
 
 It’s impossible not to pause and stare — the colours are so vibrant and
 full of life they almost seem to breathe. This beauty now lives with our
@@ -294,7 +294,7 @@ persian_palette("berlin")
 
 ### Floral (Metropolitan Museum of Art)
 
-<img align="left" alt="Image of a Floral Carpet" src="man/figures/floral.jpg" height="300">
+<img align="left" alt="Image of a Floral Carpet" src="man/figures/floral.jpg" width="250">
 
 This fragment of a carpet bears a variety of flowers on winding stems
 over a blue ground. Its structure, which is composed of two planes of
