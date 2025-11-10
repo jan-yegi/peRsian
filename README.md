@@ -311,13 +311,13 @@ persian_palette("floral")
 
 <img src="man/figures/README/fig-floral-1.png" width="100%" />
 
-## Gallery
-
-<img align="left" alt="Image of a carpet store in Hamburg" src="man/figures/gallery_hamburg_1.jpg" height="500">
-<img align="left" alt="Image of a aperson holding up a carpet in Hamburg" src="man/figures/gallery_hamburg_2.jpg" height="500">
-
 ## Acknowledgements
 
 This package is inspired by and heavily builds upon the wonderful
 [{wesanderson}](https://github.com/karthik/wesanderson/) and
 [{MetBrewer}](https://github.com/BlakeRMills/MetBrewer/) packages.
+
+## Gallery
+
+<img align="left" alt="Image of a carpet store in Hamburg" src="man/figures/gallery_hamburg_1.jpg" height="500">
+<img align="left" alt="Image of a aperson holding up a carpet in Hamburg" src="man/figures/gallery_hamburg_2.jpg" height="500">
