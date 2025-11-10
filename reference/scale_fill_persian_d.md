@@ -1,0 +1,41 @@
+# Discrete Fill Scale for Persian Palettes
+
+Apply a discrete Persian color palette to the fill aesthetic in ggplot2.
+
+## Usage
+
+``` r
+scale_fill_persian_d(name, direction = 1, ...)
+```
+
+## Arguments
+
+- name:
+
+  Name of the Persian palette to use. Options include: "pattern",
+  "roses", "medallion", "yegi", "vase", and "floral". See
+  `persian_palettes` for all available palette names.
+
+- direction:
+
+  Sets the order of colors in the scale. If -1, the order of colors is
+  reversed.
+
+- ...:
+
+  Additional arguments passed to
+  [`discrete_scale`](https://ggplot2.tidyverse.org/reference/discrete_scale.html).
+
+## Value
+
+A ggplot2 scale object.
+
+## Examples
+
+``` r
+library(ggplot2)
+ggplot(diamonds, aes(cut, price, fill = cut)) +
+  geom_boxplot() +
+  scale_fill_persian_d("medallion")
+#> Error in persian_palette(name = name, n = n, direction = direction): Palette not found: medallion
+```
