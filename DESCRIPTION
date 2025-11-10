@@ -12,4 +12,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Suggests:
     ggplot2
-URL: http://simson.io/peRsian/
+URL: https://jan-yegi.github.io/peRsian/
