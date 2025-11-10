@@ -312,6 +312,10 @@ persian_palette("floral")
 
 ## Acknowledgements
 
+A huge thank you to all friends, family and beyond who contributed the
+photos and images for this project. All images and photos are from
+personal galleries unless noted otherwise. ❤️
+
 This package is inspired by and heavily builds upon the wonderful
 [{wesanderson}](https://github.com/karthik/wesanderson/) and
 [{MetBrewer}](https://github.com/BlakeRMills/MetBrewer/) packages.
