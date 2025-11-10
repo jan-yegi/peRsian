@@ -76,7 +76,7 @@ persian_palette("tehran")
 
 ### Pooran
 
-<img align="left" alt="" src="man/figures/pooran.jpg" height="300">
+<img align="right" alt="" src="man/figures/pooran.jpg" height="300">
 
 From Namin, Ardabil, this kilim tells a world in threads — animals,
 people, gestures, even the number of fingers carefully woven into each
@@ -113,7 +113,7 @@ persian_palette("fery")
 
 ### Leyli
 
-<img align="left" alt="Photo of a large carpet draped in a museum, featuring a floral scene with dancing people" src="man/figures/leyli.jpg" height="300">
+<img align="right" alt="Photo of a large carpet draped in a museum, featuring a floral scene with dancing people" src="man/figures/leyli.jpg" height="300">
 
 This carpet from the Tehran Carpet Museum feels like a celebration
 frozen in time. It’s bursting with flowers, colour, and movement - birds
@@ -156,7 +156,7 @@ persian_palette("munich")
 
 ### Isfahan
 
-<img align="left" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.jpg" height="300">
+<img align="right" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.jpg" height="300">
 
 On a trip to Isfahan, Naeemeh and I wandered through Naqsh-e Jahan
 Square — that magical place surrounded by little shops and bazaars, full
@@ -197,7 +197,7 @@ persian_palette("hamburg")
 
 ### Hooshang
 
-<img align="left" alt="" src="man/figures/hooshang.jpg" height="300">
+<img align="right" alt="" src="man/figures/hooshang.jpg" height="300">
 
 Handwoven in Hamedan, western Iran, using handspun wool and all-natural
 dyes. Among pictorial carpets, those depicting Hooshang Shahi hold a
@@ -245,7 +245,7 @@ persian_palette("tabriz")
 
 ### Abbas
 
-<img align="left" alt="" src="man/figures/abbas.jpg" height="300">
+<img align="right" alt="" src="man/figures/abbas.jpg" height="300">
 
 At the centre sits Shah Abbas I, commonly known as Abbas the Great, the
 Safavid ruler whose reign in the 17th century marked one of the
@@ -280,7 +280,7 @@ persian_palette("reyhaneh")
 
 ### Berlin
 
-<img align="left" alt="" src="man/figures/berlin.jpg" height="300">
+<img align="right" alt="" src="man/figures/berlin.jpg" height="300">
 
 It’s impossible not to pause and stare — the colours are so vibrant and
 full of life they almost seem to breathe. This beauty now lives with our

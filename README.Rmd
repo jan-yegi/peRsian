@@ -63,7 +63,7 @@ persian_palette("tehran")
 
 ### Pooran
 
-<img align="left" alt="" src="man/figures/pooran.jpg" height="300">
+<img align="right" alt="" src="man/figures/pooran.jpg" height="300">
 
 From Namin, Ardabil, this kilim tells a world in threads — animals, people, gestures, even the number of fingers carefully woven into each form. Every scene hums with life: stories of work, play, and the quiet beauty of tradition. Its details hold both the everyday and the eternal. I dedicate it to my aunt Pooran, whose life was much the same — vivid, full of movement and colour, bright with the small, human details that made her unforgettable. — Yegi
 
@@ -86,7 +86,7 @@ persian_palette("fery")
 
 ### Leyli
 
-<img align="left" alt="Photo of a large carpet draped in a museum, featuring a floral scene with dancing people" src="man/figures/leyli.jpg" height="300">
+<img align="right" alt="Photo of a large carpet draped in a museum, featuring a floral scene with dancing people" src="man/figures/leyli.jpg" height="300">
 
 This carpet from the Tehran Carpet Museum feels like a celebration frozen in time. It's bursting with flowers, colour, and movement - birds in flight, children playing the "daf" (an Iranian frame drum musical instrument) and clapping, a man playing the "ney" (flute), and a woman dancing gracefully at the centre.
 
@@ -112,7 +112,7 @@ persian_palette("munich")
 
 ### Isfahan
 
-<img align="left" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.jpg" height="300">
+<img align="right" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.jpg" height="300">
 
 On a trip to Isfahan, Naeemeh and I wandered through Naqsh-e Jahan Square — that magical place surrounded by little shops and bazaars, full of colour and the smell of tea and saffron in the air. This tiny shop caught our eye. Inside, tucked among all the treasures, we found the smallest, most perfect little rug, a handwoven "gelim/kilim" (گلیم).
 
@@ -136,7 +136,7 @@ persian_palette("hamburg")
 
 ### Hooshang
 
-<img align="left" alt="" src="man/figures/hooshang.jpg" height="300">
+<img align="right" alt="" src="man/figures/hooshang.jpg" height="300">
 
 Handwoven in Hamedan, western Iran, using handspun wool and all-natural dyes. Among pictorial carpets, those depicting Hooshang Shahi hold a special place. The story of Hooshang Shah — one of the earliest tales in Ferdowsi's Shahnameh — has long captured the imagination of weavers and storytellers alike.
 
@@ -162,7 +162,7 @@ persian_palette("tabriz")
 
 ### Abbas
 
-<img align="left" alt="" src="man/figures/abbas.jpg" height="300">
+<img align="right" alt="" src="man/figures/abbas.jpg" height="300">
 
 At the centre sits Shah Abbas I, commonly known as Abbas the Great, the Safavid ruler whose reign in the 17th century marked one of the brightest chapters in Persian art and architecture. He's remembered for his vision, his patronage of artisans, and yes, that unmistakable moustache!
 
@@ -184,7 +184,7 @@ persian_palette("reyhaneh")
 
 ### Berlin
 
-<img align="left" alt="" src="man/figures/berlin.jpg" height="300">
+<img align="right" alt="" src="man/figures/berlin.jpg" height="300">
 
 It's impossible not to pause and stare — the colours are so vibrant and full of life they almost seem to breathe. This beauty now lives with our friend in Berlin.
 
