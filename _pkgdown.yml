@@ -1,4 +1,7 @@
 url: http://simson.io/peRsian/
 template:
   bootstrap: 5
+  includes:
+    in_header: |
+      <link rel="stylesheet" href="extra.css">
 
