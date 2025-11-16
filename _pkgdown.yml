@@ -1,7 +1,15 @@
 url: https://jan-yegi.github.io/peRsian/
 template:
   bootstrap: 5
+  bslib:
+    base_font: {google: "Lora"}
+    heading_font: {google: "Lora"}
+    bg: "#ecded2"
+    fg: "#476168"
+    primary: "#5e1d27"
+    headings-color: "#5e1d27"
+    link-color: "#e7696e"
+    link-hover-color: "#d7aa9f"
   includes:
     in_header: |
       <link rel="stylesheet" href="extra.css">
-

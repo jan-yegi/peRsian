@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# peRsian <img src="man/figures/logo.jpg" width="120" align="right" />
+# peRsian <img src="man/figures/logo.png" width="120" align="right" />
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -99,7 +99,7 @@ persian_palette("leyli")
 
 ### Munich
 
-<img align="left" alt="Image of a Carpet with a central Pattern" src="man/figures/munich.jpg" width="250">
+<img align="left" alt="Image of a Carpet with a central Pattern" src="man/figures/munich.png" width="250">
 
 What could be a good gift for my best friend as a keepsake from Iran? Obviously, a handwoven Persian rug.
 
@@ -113,7 +113,7 @@ persian_palette("munich")
 
 ### Isfahan
 
-<img align="right" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.jpg" width="250">
+<img align="right" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.png" width="250">
 
 On a trip to Isfahan, Naeemeh and I wandered through Naqsh-e Jahan Square — that magical place surrounded by little shops and bazaars, full of colour and the smell of tea and saffron in the air. This tiny shop caught our eye. Inside, tucked among all the treasures, we found the smallest, most perfect little rug, a handwoven "gelim/kilim" (گلیم).
 
@@ -137,7 +137,7 @@ persian_palette("hamburg")
 
 ### Hooshang
 
-<img align="right" alt="" src="man/figures/hooshang.jpg" width="250">
+<img align="right" alt="" src="man/figures/hooshang.png" width="250">
 
 Handwoven in Hamedan, western Iran, using handspun wool and all-natural dyes. Among pictorial carpets, those depicting Hooshang Shahi hold a special place. The story of Hooshang Shah — one of the earliest tales in Ferdowsi's Shahnameh — has long captured the imagination of weavers and storytellers alike.
 
@@ -195,7 +195,7 @@ persian_palette("berlin")
 
 ### Floral (Metropolitan Museum of Art)
 
-<img align="left" alt="Image of a Floral Carpet" src="man/figures/floral.jpg" width="250">
+<img align="left" alt="Image of a Floral Carpet" src="man/figures/floral.png" width="250">
 
 This fragment of a carpet bears a variety of flowers on winding stems over a blue ground. Its structure, which is composed of two planes of warp threads, indicates that it was probably produced in the city of Kirman in southeastern Iran. Carpets from this city display a wide range of patterns but are alike in construction. Exported to India during the reign of Emperor Akbar (r. 1556-1605), Kirman carpets were known to be among the finest produced in Iran during this period.
 

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# peRsian <img src="man/figures/logo.jpg" width="120" align="right" />
+# peRsian <img src="man/figures/logo.png" width="120" align="right" />
 
 <!-- badges: start -->
 
@@ -134,7 +134,7 @@ persian_palette("leyli")
 
 ### Munich
 
-<img align="left" alt="Image of a Carpet with a central Pattern" src="man/figures/munich.jpg" width="250">
+<img align="left" alt="Image of a Carpet with a central Pattern" src="man/figures/munich.png" width="250">
 
 What could be a good gift for my best friend as a keepsake from Iran?
 Obviously, a handwoven Persian rug.
@@ -156,7 +156,7 @@ persian_palette("munich")
 
 ### Isfahan
 
-<img align="right" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.jpg" width="250">
+<img align="right" alt="Image of a small carpet from Isfahan" src="man/figures/isfahan.png" width="250">
 
 On a trip to Isfahan, Naeemeh and I wandered through Naqsh-e Jahan
 Square — that magical place surrounded by little shops and bazaars, full
@@ -197,7 +197,7 @@ persian_palette("hamburg")
 
 ### Hooshang
 
-<img align="right" alt="" src="man/figures/hooshang.jpg" width="250">
+<img align="right" alt="" src="man/figures/hooshang.png" width="250">
 
 Handwoven in Hamedan, western Iran, using handspun wool and all-natural
 dyes. Among pictorial carpets, those depicting Hooshang Shahi hold a
@@ -294,7 +294,7 @@ persian_palette("berlin")
 
 ### Floral (Metropolitan Museum of Art)
 
-<img align="left" alt="Image of a Floral Carpet" src="man/figures/floral.jpg" width="250">
+<img align="left" alt="Image of a Floral Carpet" src="man/figures/floral.png" width="250">
 
 This fragment of a carpet bears a variety of flowers on winding stems
 over a blue ground. Its structure, which is composed of two planes of
