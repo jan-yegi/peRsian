@@ -4,3 +4,7 @@ main img[align="left"] {
 main img[align="right"] {
   padding-left: 20px;
 }
+main img[align="left"],
+main img[align="right"] {
+  max-width: 55%;
+}
