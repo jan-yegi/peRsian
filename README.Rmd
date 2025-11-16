@@ -9,7 +9,8 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README/fig-",
-  fig.height = 1, # for palettes
+  fig.height = 1.05, # for palettes
+  dpi = 300,
   out.width = "100%"
 )
 ```
