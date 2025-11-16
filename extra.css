@@ -1,3 +1,4 @@
+/* Images */
 main img[align="left"] {
   padding-right: 20px;
 }
@@ -7,4 +8,36 @@ main img[align="right"] {
 main img[align="left"],
 main img[align="right"] {
   max-width: 55%;
+}
+
+/* Theming */
+pre {
+  background-color: rgba(215, 170, 159, 0.2);
+  border-left: 3px solid #6a4c56;
+  border-color: #6a4c56;
+}
+
+.navbar {
+  background-color: #6a4c56 !important;
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #ecded2 !important;
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #ecded2 !important;
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #ecded2 !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ecded2 !important;
+}
+
+.navbar .text-muted {
+  color: #d7aa9f !important;
 }

@@ -1,4 +1,4 @@
-# peRsian ![](reference/figures/logo.jpg)
+# peRsian
 
 Hi everyone, and welcome to our package “peRsian”!
 
@@ -131,7 +131,7 @@ persian_palette("leyli")
 ### Munich
 
 ![Image of a Carpet with a central
-Pattern](reference/figures/munich.jpg)
+Pattern](reference/figures/munich.png)
 
 What could be a good gift for my best friend as a keepsake from Iran?
 Obviously, a handwoven Persian rug.
@@ -153,7 +153,7 @@ persian_palette("munich")
 
 ### Isfahan
 
-![Image of a small carpet from Isfahan](reference/figures/isfahan.jpg)
+![Image of a small carpet from Isfahan](reference/figures/isfahan.png)
 
 On a trip to Isfahan, Naeemeh and I wandered through Naqsh-e Jahan
 Square — that magical place surrounded by little shops and bazaars, full
@@ -194,7 +194,7 @@ persian_palette("hamburg")
 
 ### Hooshang
 
-![](reference/figures/hooshang.jpg)
+![](reference/figures/hooshang.png)
 
 Handwoven in Hamedan, western Iran, using handspun wool and all-natural
 dyes. Among pictorial carpets, those depicting Hooshang Shahi hold a
@@ -291,7 +291,7 @@ persian_palette("berlin")
 
 ### Floral (Metropolitan Museum of Art)
 
-![Image of a Floral Carpet](reference/figures/floral.jpg)
+![Image of a Floral Carpet](reference/figures/floral.png)
 
 This fragment of a carpet bears a variety of flowers on winding stems
 over a blue ground. Its structure, which is composed of two planes of
