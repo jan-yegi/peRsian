@@ -63,7 +63,10 @@ as.palette <- function(colors, name) {
 #' @export
 print.palette <- function(x, ...) {
   n <- length(x)
-  old <- graphics::par(mar = c(0.5, 0, 0.5, 0))
+  old <- graphics::par(
+    mar = c(0.5, 0, 0.5, 0),
+    bg = NA
+  )
   on.exit(graphics::par(old))
 
   graphics::image(1:n, 1, as.matrix(1:n), col = x,
