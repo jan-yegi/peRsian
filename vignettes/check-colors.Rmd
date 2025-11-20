@@ -1,0 +1,140 @@
+---
+title: "Analysis of Palette Colors"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{check-colors}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  fig.width = 7,
+  fig.height = 3,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(peRsian)
+library(dplyr)
+```
+
+While there is always a qualitative aspect to choosing colors for data visualizations, it's also possible to quantitatively assess how distinguishable the colors within a palette are.
+
+We can use the `colorblindcheck` package to evaluate how distinguishable the colors in each palette are, both under normal vision and various forms of colorblindness, which is particularly important for ensuring accessibility in visualizations.
+
+## `peRsian` Palettes
+
+Let's start by listing all available palettes in the `peRsian` package.
+
+```{r}
+names(persian_palettes)
+```
+
+Next, we can have a look at an evaluation of each palette using `colorblindcheck`.
+
+```{r results='asis'}
+# Generate a subjeading and evaluation for each palette
+for(palette_name in names(persian_palettes)) {
+  cat("\n\n### ", palette_name, "\n\n")
+  
+  colors <- persian_palette(palette_name)
+  check_results <- colorblindcheck::palette_check(colors, plot = TRUE)
+  
+  check_results |>
+    knitr::kable(digits = 2) |>
+    print()
+}
+```
+
+## Quantitative Comparison
+
+With the scores produced by `colorblindcheck`, we can now perform a proper quantitative analysis to check which palettes meet certain thresholds and which might need adjustments.
+
+### Colorblind-Safety
+
+Let's compare `peRsian` with the popular `viridis` palette, which has specifically been designed to handle colorblindness well, to put its the color difference scores into perspective.
+
+```{r}
+# Helper function to conveniently calculate scores and assign a palette name
+calculate_palette_scores <- function(colors, palette_name, ...) {
+  check_results <- colorblindcheck::palette_check(colors, ...)
+  cbind(
+    data.frame(palette = palette_name),
+    check_results
+  )
+}
+```
+
+First, we calculate the scores for `viridis`.
+
+```{r}
+viridis_scores_df <- calculate_palette_scores(
+  viridisLite::viridis(8),
+  "viridis",
+  plot = TRUE
+)
+viridis_scores_df |>
+  knitr::kable(digits = 2)
+```
+
+Let's use the smallest difference in `viridis` as the threshold to identify which palettes in `peRsian` we deem "colorblind-safe". 
+
+```{r}
+viridis_min_score <- min(viridis_scores_df$min_dist)
+viridis_min_score
+```
+
+```{r}
+# Create a dataframe with scores for all palettes in the package
+persian_scores_df <- do.call(rbind, lapply(names(persian_palettes), function(palette_name) {
+  calculate_palette_scores(
+    persian_palette(palette_name),
+    palette_name,
+    tolerance = viridis_min_score
+  )
+}))
+```
+
+Now we can use this information to only mark palettes as colorblind-safe, where the smallest difference is above the threshold across ALL different forms of visual perception.
+
+```{r}
+# Keep only palettes where all entries are above threshold
+palettes_above_threshold <- persian_scores_df |>
+  group_by(palette) |> 
+  # Number of comparisons == Number of comparisons above threshold
+  filter(all(ncp == ndcp))
+
+colorblind_safe_palettes <- palettes_above_threshold$palette |>
+  unique()
+
+colorblind_safe_palettes
+```
+
+Let's also collect the names of all palettes that didn't make it (use these with caution!).
+
+```{r}
+non_colorblind_safe_palettes <- names(persian_palettes)[!names(persian_palettes) %in% palettes_above_threshold$palette]
+
+non_colorblind_safe_palettes
+```
+
+### Ordering Palettes
+
+Finally, we can order all palettes by their minimum color difference (under full vision) to get a better overview of which ones are most distinguishable and which ones may need more work.
+
+```{r}
+persian_scores_df |>
+  filter(name == "normal") |>
+  arrange(desc(min_dist))
+```
+
+Palettes which may need adjustments:
+
+```{r}
+persian_scores_df |>
+  filter(name == "normal") |>
+  arrange(min_dist)
+```
