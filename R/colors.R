@@ -15,6 +15,12 @@ persian_palettes <- list(
   floral = c("#795e3f", "#131519", "#2a3f3e", "#532d23", "#7f4a31")
 )
 
+persian_palette_names_colorblind_safe <- c(
+  "fery", "isfahan", "munich", "abbas", "berlin", "pooran", "hooshang"
+)
+#' @export
+persian_palettes_colorblind_safe <- persian_palettes[persian_palette_names_colorblind_safe]
+
 #' A Palette Generator Based on Persian Art
 #'
 #' This is a collection of color palettes based on artifacts of persian art.

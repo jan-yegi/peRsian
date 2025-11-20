@@ -56,6 +56,13 @@ ggplot(diamonds, aes(carat, price, color = cut)) +
   scale_color_persian_d("fery")
 ```
 
+We also include a list of colorblind-safe palettes by checking for thresholds with the package `colorblindcheck`. You can read more about the process in `vignette("check-colors")`.
+
+```{r}
+# Names of colorblind-safe palettes
+names(persian_palettes_colorblind_safe)
+```
+
 
 ## ~~Palettes~~ Carpets
 

@@ -63,6 +63,16 @@ ggplot(diamonds, aes(carat, price, color = cut)) +
 
 <img src="man/figures/README/fig-unnamed-chunk-2-1.png" width="100%" />
 
+We also include a list of colorblind-safe palettes by checking for
+thresholds with the package `colorblindcheck`. You can read more about
+the process in `vignette("check-colors")`.
+
+``` r
+# Names of colorblind-safe palettes
+names(persian_palettes_colorblind_safe)
+#> [1] "fery"     "isfahan"  "munich"   "abbas"    "berlin"   "pooran"   "hooshang"
+```
+
 ## ~~Palettes~~ Carpets
 
 ### Tehran
