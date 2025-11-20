@@ -18,6 +18,9 @@ persian_palette(
 
 \item{type}{Either "continuous" or "discrete". Use continuous if you want
 to automatically interpolate between colours}
+
+\item{direction}{Sets the order of colors in the palette. If 1, the default,
+colors are as output in the palette. If -1, the order of colors is reversed.}
 }
 \value{
 A vector of colours.

@@ -1,3 +1,10 @@
+#' Persian Color Palettes
+#'
+#' A list of color palettes inspired by Persian art and artifacts.
+#' Each palette contains a vector of hex color codes.
+#'
+#' @format A named list of character vectors containing hex color codes
+#' @seealso \code{\link{persian_palette}} to generate palettes and \code{\link{persian_palettes_colorblind_safe}} for colorblind-safe options.
 #' @export
 persian_palettes <- list(
   fery = c("#b4c7e3", "#2a7cbc", "#042141", "#e9fafd", "#d19d39", "#325f6b", "#6f0701", "#df6f3f"),
@@ -18,6 +25,13 @@ persian_palettes <- list(
 persian_palette_names_colorblind_safe <- c(
   "fery", "isfahan", "munich", "abbas", "berlin", "pooran", "hooshang"
 )
+
+#' Colorblind-Safe Persian Color Palettes
+#'
+#' A subset of Persian color palettes that are colorblind-safe.
+#' These palettes have been tested for accessibility, see \code{vignette("check-colors")}.
+#'
+#' @format A named list of character vectors containing hex color codes
 #' @export
 persian_palettes_colorblind_safe <- persian_palettes[persian_palette_names_colorblind_safe]
 
@@ -25,10 +39,12 @@ persian_palettes_colorblind_safe <- persian_palettes[persian_palette_names_color
 #'
 #' This is a collection of color palettes based on artifacts of persian art.
 #'
-#' @param n Number of colors desired.
 #' @param name Name of desired palette.
+#' @param n Number of colors desired.
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours
+#' @param direction Sets the order of colors in the palette. If 1, the default,
+#'   colors are as output in the palette. If -1, the order of colors is reversed.
 #' @return A vector of colours.
 #' @export
 persian_palette <- function(name, n, type = c("discrete", "continuous"), direction = c(1, -1)) {
@@ -61,7 +77,6 @@ persian_palette <- function(name, n, type = c("discrete", "continuous"), directi
   as.palette(out, name)
 }
 
-#' @export
 as.palette <- function(colors, name) {
   structure(colors, class = "palette", name = name)
 }
