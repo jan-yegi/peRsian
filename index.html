@@ -65,7 +65,7 @@
 </h1>
 </div>
 <!-- badges: start -->
-<!-- badges: end -->
+
 <p>Hi everyone, and welcome to our package “peRsian”!</p>
 <p>peRsian is a tribute to centuries of Persian carpet-making — a craft that’s been alive for over two thousand years. It’s dedicated to the incredible artisans who’ve kept this tradition alive: especially the women who spent countless hours knotting and weaving every single thread, and the men who sheared the sheep, dyed the wool, and prepared the yarn. Working in harmony, they transformed simple fibres into carpets rich in colour, rhythm, and life.</p>
 <p>We’ve extracted colour palettes straight from our personal galleries of Persian carpets, rugs, and gabbehs, each paired with a small story of its own. They capture rich reds, deep indigos, saffron golds, and all those subtle shades in between.</p>
@@ -98,6 +98,11 @@
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_color_persian_d.html">scale_color_persian_d</a></span><span class="op">(</span><span class="st">"fery"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-unnamed-chunk-2-1.png" width="100%"></p>
+<p>We also include a list of colorblind-safe palettes by checking for thresholds with the package <code>colorblindcheck</code>. You can read more about the process in <code><a href="articles/check-colors.html">vignette("check-colors")</a></code>.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Names of colorblind-safe palettes</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">persian_palettes_colorblind_safe</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "fery"     "isfahan"  "munich"   "abbas"    "berlin"   "pooran"   "hooshang"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="palettes-carpets">
@@ -109,7 +114,7 @@
 <p><img align="left" alt="Image of a Carpet feauturing vases filled with roses" src="reference/figures/tehran.jpg" width="250"></p>
 <p>A girl in hijab standing before a Persian carpet at the Carpet Museum of Iran in Tehran (circa 2015). Much has changed since then. After months of protests, the scarf weighs a little less now — though it’s not gone, not yet — it remains a weight many women still carry. That change exists because of the courage of countless Iranian women who have fought for years to claim their freedom.</p>
 <p>Woman, Life, Freedom. Jin, Jiyan, Azadî ✌️</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"tehran"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-roses-1.png" width="100%"></p>
 </div>
@@ -118,7 +123,7 @@
 </h3>
 <p><img align="right" alt="" src="reference/figures/pooran.jpg" width="250"></p>
 <p>From Namin, Ardabil, this kilim tells a world in threads — animals, people, gestures, even the number of fingers carefully woven into each form. Every scene hums with life: stories of work, play, and the quiet beauty of tradition. Its details hold both the everyday and the eternal. I dedicate it to my aunt Pooran, whose life was much the same — vivid, full of movement and colour, bright with the small, human details that made her unforgettable. — Yegi</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"pooran"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-pooran-1.png" width="100%"></p>
 </div>
@@ -128,7 +133,7 @@
 <p><img align="left" alt="Image of a carpet fragment repurposed as a cushion" src="reference/figures/fery.jpg" width="250"></p>
 <p>This vintage handwoven cushion brings new life to an antique wool rug more than half a century old, carefully restored for continued use. Persian weaving traditions are known for their durability and enduring patterns.</p>
 <p>Our very own “Fery Hahn 🐔” brought this beautiful carpet cushion all the way from Shiraz to Munich, before it was carried even farther to New Zealand, and now, this little piece has found its home in Melbourne!</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"fery"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-medallion-1.png" width="100%"></p>
 </div>
@@ -138,7 +143,7 @@
 <p><img align="right" alt="Photo of a large carpet draped in a museum, featuring a floral scene with dancing people" src="reference/figures/leyli.jpg" width="250"></p>
 <p>This carpet from the Tehran Carpet Museum feels like a celebration frozen in time. It’s bursting with flowers, colour, and movement - birds in flight, children playing the “daf” (an Iranian frame drum musical instrument) and clapping, a man playing the “ney” (flute), and a woman dancing gracefully at the centre.</p>
 <p>It’s hard to tell if it’s a story, a dream, or a memory, but it feels like joy woven into wool. A reminder that Persian carpets aren’t just art; they’re music, dance, and moments of life itself, stitched together in colour. 🎶</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"leyli"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-leyli-1.png" width="100%"></p>
 </div>
@@ -149,7 +154,7 @@
 <p>What could be a good gift for my best friend as a keepsake from Iran? Obviously, a handwoven Persian rug.</p>
 <p>Gelim/Kilim (گلیم) is a traditional flat-woven rug made without pile, crafted by nomadic and rural weavers across Iran. Persian gelims are known for their bold geometric patterns, vivid natural dyes, and practical lightness and durability — often used as floor coverings or wall hangings.</p>
 <p>A little piece of Shiraz is now living happily in his place in Munich. — Yegi</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"munich"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-munich-1.png" width="100%"></p>
 </div>
@@ -159,7 +164,7 @@
 <p><img align="right" alt="Image of a small carpet from Isfahan" src="reference/figures/isfahan.png" width="250"></p>
 <p>On a trip to Isfahan, Naeemeh and I wandered through Naqsh-e Jahan Square — that magical place surrounded by little shops and bazaars, full of colour and the smell of tea and saffron in the air. This tiny shop caught our eye. Inside, tucked among all the treasures, we found the smallest, most perfect little rug, a handwoven “gelim/kilim” (گلیم).</p>
 <p>I was just about to move to Germany, and I needed something light, so I could take it with me wherever I went. A small piece of home — colourful, and full of memories. — Yegi</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"isfahan"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-isfahan-1.png" width="100%"></p>
 </div>
@@ -169,7 +174,7 @@
 <p><img align="left" alt="Image of the carpet bought in Hamburg" src="reference/figures/hamburg.jpg" width="250"></p>
 <p>Hamburg, March. A surprisingly windless, cloudy-grey kind of day — basically, as good as it gets there. Wandering through the city’s tiny side streets, suddenly Alex shouted, “Hey Yegi — a Persian carpet store!” To our surprise, it turned out to be a huge shop tucked away on the fifth floor of a building.</p>
 <p>After nearly an hour exploring piles of carpets and rugs, a decision was made: this was the one. On the train ride back to Munich, we spread it out on one of the tables and played a deck of cards on it!!! It was a memorable ride indeed.</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"hamburg"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-hamburg-1.png" width="100%"></p>
 </div>
@@ -180,7 +185,7 @@
 <p>Handwoven in Hamedan, western Iran, using handspun wool and all-natural dyes. Among pictorial carpets, those depicting Hooshang Shahi hold a special place. The story of Hooshang Shah — one of the earliest tales in Ferdowsi’s Shahnameh — has long captured the imagination of weavers and storytellers alike.</p>
 <p>In the Avesta, his name appears as Heoshenge, with the epithet Pradetta, meaning “lawmaker.” Hooshang is celebrated as the discoverer of fire and founder of the Sadeh Festival, remembered as the ruler of the Seven Countries, defeater of evil, and, in some traditions, the architect of Persepolis.</p>
 <p>Photo credit: <a href="https://dyadartisans.com/shop/rugs-textiles/rugs/antique-malayer-hooshang-shah-carpet-3-6sqm/" class="external-link uri">https://dyadartisans.com/shop/rugs-textiles/rugs/antique-malayer-hooshang-shah-carpet-3-6sqm/</a></p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"hooshang"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-hooshang-1.png" width="100%"></p>
 </div>
@@ -190,7 +195,7 @@
 <p><img align="left" alt="" src="reference/figures/tabriz.jpg" width="250"></p>
 <p>This stunning carpet, called “The Four Seasons,” was woven in Tabriz, one of Iran’s most renowned carpet-weaving cities. Its design tells the story of the earth’s four seasons — spring, summer, autumn, and winter — each woven into a corner with incredible detail and colour. There’s so much happening in this piece — you can almost feel the shifting air, the warmth of summer to the chill of winter. It’s as if the weavers captured not just the seasons themselves, but how people feel in them — their warmth, energy, and quiet moments of rest.</p>
 <p>At the centre lies the Faravahar, the ancient Persian symbol associated with light, wisdom, and freedom; “good thoughts, good words, good deeds”.</p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"tabriz"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-tabriz-1.png" width="100%"></p>
 </div>
@@ -199,7 +204,7 @@
 </h3>
 <p><img align="right" alt="" src="reference/figures/abbas.jpg" width="250"></p>
 <p>At the centre sits Shah Abbas I, commonly known as Abbas the Great, the Safavid ruler whose reign in the 17th century marked one of the brightest chapters in Persian art and architecture. He’s remembered for his vision, his patronage of artisans, and yes, that unmistakable moustache!</p>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"abbas"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-abbas-1.png" width="100%"></p>
 </div>
@@ -209,7 +214,7 @@
 <p><img align="left" alt="" src="reference/figures/reyhaneh.jpg" width="250"></p>
 <p>This carpet is a perfect example of how Persian rugs bring soul, warmth, colour, and life into the spaces we live in. In Iran, having carpets at home feels so ordinary — they’re simply there, woven into everyday life. And yet, it’s easy to forget how extraordinary they truly are. These pieces carry stories, hands, and history — quietly grounding us, softening our steps, and making any place feel like home.</p>
 <p>Photo credit: Reyhaneh — taken at Lovar Villa, Qeshm (southern Iran).</p>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"reyhaneh"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-reyhaneh-1.png" width="100%"></p>
 </div>
@@ -218,7 +223,7 @@
 </h3>
 <p><img align="right" alt="" src="reference/figures/berlin.jpg" width="250"></p>
 <p>It’s impossible not to pause and stare — the colours are so vibrant and full of life they almost seem to breathe. This beauty now lives with our friend in Berlin.</p>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"berlin"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-berlin-1.png" width="100%"></p>
 </div>
@@ -228,7 +233,7 @@
 <p><img align="left" alt="Image of a Floral Carpet" src="reference/figures/floral.png" width="250"></p>
 <p>This fragment of a carpet bears a variety of flowers on winding stems over a blue ground. Its structure, which is composed of two planes of warp threads, indicates that it was probably produced in the city of Kirman in southeastern Iran. Carpets from this city display a wide range of patterns but are alike in construction. Exported to India during the reign of Emperor Akbar (r. 1556-1605), Kirman carpets were known to be among the finest produced in Iran during this period.</p>
 <p>This carpet is part of the collection of the Metropolitan Museum of Art: <a href="https://www.metmuseum.org/art/collection/search/452190" class="external-link uri">https://www.metmuseum.org/art/collection/search/452190</a></p>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/persian_palette.html">persian_palette</a></span><span class="op">(</span><span class="st">"floral"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README/fig-floral-1.png" width="100%"></p>
 </div>
@@ -269,7 +274,12 @@
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/jan-yegi/peRsian/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/jan-yegi/peRsian/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>

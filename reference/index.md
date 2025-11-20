@@ -4,6 +4,10 @@
 
 - [`persian_palette()`](https://jan-yegi.github.io/peRsian/reference/persian_palette.md)
   : A Palette Generator Based on Persian Art
+- [`persian_palettes`](https://jan-yegi.github.io/peRsian/reference/persian_palettes.md)
+  : Persian Color Palettes
+- [`persian_palettes_colorblind_safe`](https://jan-yegi.github.io/peRsian/reference/persian_palettes_colorblind_safe.md)
+  : Colorblind-Safe Persian Color Palettes
 - [`scale_color_persian_c()`](https://jan-yegi.github.io/peRsian/reference/scale_color_persian_c.md)
   [`scale_colour_persian_c()`](https://jan-yegi.github.io/peRsian/reference/scale_color_persian_c.md)
   : Continuous Color Scale for Persian Palettes

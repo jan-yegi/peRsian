@@ -22,7 +22,8 @@ scale_colour_persian_d(name, direction = 1, ...)
   Name of the Persian palette to use. Options include: "munich", "fery",
   "tehran", "leyli", "tabriz", "hooshang", "reyhaneh", "floral",
   "hamburg", "pooran", "abbas", "isfahan", "berlin" See
-  `persian_palettes` for all available palette names.
+  [`persian_palettes`](https://jan-yegi.github.io/peRsian/reference/persian_palettes.md)
+  for all available palette names.
 
 - direction:
 
