@@ -6,14 +6,17 @@ Apply a discrete Persian color palette to the fill aesthetic in ggplot2.
 
 ``` r
 scale_fill_persian_d(name, direction = 1, ...)
+
+scale_fill_persian(name, direction = 1, ...)
 ```
 
 ## Arguments
 
 - name:
 
-  Name of the Persian palette to use. Options include: "pattern",
-  "roses", "medallion", "yegi", "vase", and "floral". See
+  Name of the Persian palette to use. Options include: "munich", "fery",
+  "tehran", "leyli", "tabriz", "hooshang", "reyhaneh", "floral",
+  "hamburg", "pooran", "abbas", "isfahan", "berlin" See
   `persian_palettes` for all available palette names.
 
 - direction:
@@ -36,6 +39,5 @@ A ggplot2 scale object.
 library(ggplot2)
 ggplot(diamonds, aes(cut, price, fill = cut)) +
   geom_boxplot() +
-  scale_fill_persian_d("medallion")
-#> Error in persian_palette(name = name, n = n, direction = direction): Palette not found: medallion
+  scale_fill_persian_d("munich")
 ```

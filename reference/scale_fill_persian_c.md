@@ -13,8 +13,9 @@ scale_fill_persian_c(name, direction = 1, ...)
 
 - name:
 
-  Name of the Persian palette to use. Options include: "pattern",
-  "roses", "medallion", "yegi", "vase", and "floral". See
+  Name of the Persian palette to use. Options include: "munich", "fery",
+  "tehran", "leyli", "tabriz", "hooshang", "reyhaneh", "floral",
+  "hamburg", "pooran", "abbas", "isfahan", "berlin" See
   `persian_palettes` for all available palette names.
 
 - direction:
@@ -37,6 +38,5 @@ A ggplot2 scale object.
 library(ggplot2)
 ggplot(diamonds, aes(x = carat, y = price, z = depth)) +
   stat_summary_2d(fun = mean) +
-  scale_fill_persian_c("yegi")
-#> Error in persian_palette(name = name, direction = direction): Palette not found: yegi
+  scale_fill_persian_c("tehran")
 ```
