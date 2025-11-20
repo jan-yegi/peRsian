@@ -3,7 +3,8 @@
 #' Apply a discrete Persian color palette to the color aesthetic in ggplot2.
 #'
 #' @param name Name of the Persian palette to use. Options include:
-#'   "pattern", "roses", "medallion", "yegi", "vase", and "floral".
+#' "munich", "fery", "tehran", "leyli", "tabriz", "hooshang", "reyhaneh",
+#' "floral", "hamburg", "pooran", "abbas", "isfahan", "berlin"
 #'   See \code{\link{persian_palettes}} for all available palette names.
 #' @param direction Sets the order of colors in the scale. If -1, the order
 #'   of colors is reversed.
@@ -30,7 +31,8 @@ scale_color_persian_d <- function(name, direction = 1, ...) {
 #' Apply a discrete Persian color palette to the fill aesthetic in ggplot2.
 #'
 #' @param name Name of the Persian palette to use. Options include:
-#'   "pattern", "roses", "medallion", "yegi", "vase", and "floral".
+#' "munich", "fery", "tehran", "leyli", "tabriz", "hooshang", "reyhaneh",
+#' "floral", "hamburg", "pooran", "abbas", "isfahan", "berlin"
 #'   See \code{\link{persian_palettes}} for all available palette names.
 #' @param direction Sets the order of colors in the scale. If -1, the order
 #'   of colors is reversed.
@@ -58,7 +60,8 @@ scale_fill_persian_d <- function(name, direction = 1, ...) {
 #' Apply a continuous Persian color palette gradient to the color aesthetic in ggplot2.
 #'
 #' @param name Name of the Persian palette to use. Options include:
-#'   "pattern", "roses", "medallion", "yegi", "vase", and "floral".
+#' "munich", "fery", "tehran", "leyli", "tabriz", "hooshang", "reyhaneh",
+#' "floral", "hamburg", "pooran", "abbas", "isfahan", "berlin"
 #'   See \code{\link{persian_palettes}} for all available palette names.
 #' @param direction Sets the order of colors in the scale. If -1, the order
 #'   of colors is reversed.
@@ -85,7 +88,8 @@ scale_color_persian_c <- function(name, direction = 1, ...) {
 #' Apply a continuous Persian color palette gradient to the fill aesthetic in ggplot2.
 #'
 #' @param name Name of the Persian palette to use. Options include:
-#'   "pattern", "roses", "medallion", "yegi", "vase", and "floral".
+#' "munich", "fery", "tehran", "leyli", "tabriz", "hooshang", "reyhaneh",
+#' "floral", "hamburg", "pooran", "abbas", "isfahan", "berlin"
 #'   See \code{\link{persian_palettes}} for all available palette names.
 #' @param direction Sets the order of colors in the scale. If -1, the order
 #'   of colors is reversed.

@@ -11,7 +11,8 @@ scale_fill_persian(name, direction = 1, ...)
 }
 \arguments{
 \item{name}{Name of the Persian palette to use. Options include:
-"pattern", "roses", "medallion", "yegi", "vase", and "floral".
+"munich", "fery", "tehran", "leyli", "tabriz", "hooshang", "reyhaneh",
+"floral", "hamburg", "pooran", "abbas", "isfahan", "berlin"
 See \code{\link{persian_palettes}} for all available palette names.}
 
 \item{direction}{Sets the order of colors in the scale. If -1, the order
