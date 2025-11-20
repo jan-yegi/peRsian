@@ -3,7 +3,7 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   check-colors: check-colors.html
-last_built: 2025-11-20T13:13Z
+last_built: 2025-11-20T13:17Z
 urls:
   reference: https://jan-yegi.github.io/peRsian/reference
   article: https://jan-yegi.github.io/peRsian/articles
