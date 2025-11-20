@@ -14,6 +14,7 @@ Suggests:
     dplyr,
     ggplot2,
     knitr,
-    rmarkdown
+    rmarkdown,
+    colorblindcheck
 URL: https://jan-yegi.github.io/peRsian/
 VignetteBuilder: knitr
