@@ -2,10 +2,16 @@
 % Please edit documentation in R/scales.R
 \name{scale_color_persian_d}
 \alias{scale_color_persian_d}
+\alias{scale_color_persian}
+\alias{scale_colour_persian}
 \alias{scale_colour_persian_d}
 \title{Discrete Color Scale for Persian Palettes}
 \usage{
 scale_color_persian_d(name, direction = 1, ...)
+
+scale_color_persian(name, direction = 1, ...)
+
+scale_colour_persian(name, direction = 1, ...)
 
 scale_colour_persian_d(name, direction = 1, ...)
 }

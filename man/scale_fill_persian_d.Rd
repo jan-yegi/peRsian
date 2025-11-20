@@ -2,9 +2,12 @@
 % Please edit documentation in R/scales.R
 \name{scale_fill_persian_d}
 \alias{scale_fill_persian_d}
+\alias{scale_fill_persian}
 \title{Discrete Fill Scale for Persian Palettes}
 \usage{
 scale_fill_persian_d(name, direction = 1, ...)
+
+scale_fill_persian(name, direction = 1, ...)
 }
 \arguments{
 \item{name}{Name of the Persian palette to use. Options include:

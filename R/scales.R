@@ -107,6 +107,22 @@ scale_fill_persian_c <- function(name, direction = 1, ...) {
   )
 }
 
+# Default to discrete scales for non-postfixed functions
+
+#' @rdname scale_color_persian_d
+#' @export
+scale_color_persian <- scale_color_persian_d
+
+#' @rdname scale_fill_persian_d
+#' @export
+scale_fill_persian <- scale_fill_persian_d
+
+# Add aliases for British spelling
+
+#' @rdname scale_color_persian_d
+#' @export
+scale_colour_persian <- scale_color_persian
+
 #' @rdname scale_color_persian_d
 #' @export
 scale_colour_persian_d <- scale_color_persian_d
