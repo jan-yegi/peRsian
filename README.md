@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/jan-yegi/peRsian/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jan-yegi/peRsian/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Hi everyone, and welcome to our package “peRsian”!
