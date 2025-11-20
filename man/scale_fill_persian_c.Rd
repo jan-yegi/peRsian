@@ -26,5 +26,5 @@ Apply a continuous Persian color palette gradient to the fill aesthetic in ggplo
 library(ggplot2)
 ggplot(diamonds, aes(x = carat, y = price, z = depth)) +
   stat_summary_2d(fun = mean) +
-  scale_fill_persian_c("yegi")
+  scale_fill_persian_c("tehran")
 }

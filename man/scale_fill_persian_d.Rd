@@ -26,5 +26,5 @@ Apply a discrete Persian color palette to the fill aesthetic in ggplot2.
 library(ggplot2)
 ggplot(diamonds, aes(cut, price, fill = cut)) +
   geom_boxplot() +
-  scale_fill_persian_d("medallion")
+  scale_fill_persian_d("munich")
 }

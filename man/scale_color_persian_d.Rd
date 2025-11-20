@@ -29,5 +29,5 @@ Apply a discrete Persian color palette to the color aesthetic in ggplot2.
 library(ggplot2)
 ggplot(diamonds, aes(carat, price, color = cut)) +
   geom_point() +
-  scale_color_persian_d("roses")
+  scale_color_persian_d("fery")
 }

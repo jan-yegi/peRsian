@@ -29,5 +29,5 @@ Apply a continuous Persian color palette gradient to the color aesthetic in ggpl
 library(ggplot2)
 ggplot(diamonds, aes(carat, price, color = depth)) +
   geom_point() +
-  scale_color_persian_c("vase")
+  scale_color_persian_c("tehran")
 }

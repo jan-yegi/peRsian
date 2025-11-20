@@ -14,7 +14,7 @@
 #' library(ggplot2)
 #' ggplot(diamonds, aes(carat, price, color = cut)) +
 #'   geom_point() +
-#'   scale_color_persian_d("roses")
+#'   scale_color_persian_d("fery")
 scale_color_persian_d <- function(name, direction = 1, ...) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Package 'ggplot2' is required for this function.", call. = FALSE)
@@ -41,7 +41,7 @@ scale_color_persian_d <- function(name, direction = 1, ...) {
 #' library(ggplot2)
 #' ggplot(diamonds, aes(cut, price, fill = cut)) +
 #'   geom_boxplot() +
-#'   scale_fill_persian_d("medallion")
+#'   scale_fill_persian_d("munich")
 scale_fill_persian_d <- function(name, direction = 1, ...) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Package 'ggplot2' is required for this function.", call. = FALSE)
@@ -69,7 +69,7 @@ scale_fill_persian_d <- function(name, direction = 1, ...) {
 #' library(ggplot2)
 #' ggplot(diamonds, aes(carat, price, color = depth)) +
 #'   geom_point() +
-#'   scale_color_persian_c("vase")
+#'   scale_color_persian_c("tehran")
 scale_color_persian_c <- function(name, direction = 1, ...) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Package 'ggplot2' is required for this function.", call. = FALSE)
@@ -96,7 +96,7 @@ scale_color_persian_c <- function(name, direction = 1, ...) {
 #' library(ggplot2)
 #' ggplot(diamonds, aes(x = carat, y = price, z = depth)) +
 #'   stat_summary_2d(fun = mean) +
-#'   scale_fill_persian_c("yegi")
+#'   scale_fill_persian_c("tehran")
 scale_fill_persian_c <- function(name, direction = 1, ...) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Package 'ggplot2' is required for this function.", call. = FALSE)
