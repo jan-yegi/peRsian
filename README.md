@@ -53,6 +53,16 @@ persian_palette(names(persian_palettes)[1])
 
 <img src="man/figures/README/fig-example-1.png" width="100%" />
 
+``` r
+library(ggplot2)
+
+ggplot(diamonds, aes(carat, price, color = cut)) +
+  geom_point() +
+  scale_color_persian_d("fery")
+```
+
+<img src="man/figures/README/fig-unnamed-chunk-2-1.png" width="100%" />
+
 ## ~~Palettes~~ Carpets
 
 ### Tehran
