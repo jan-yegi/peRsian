@@ -17,6 +17,7 @@ Suggests:
     rmarkdown,
     colorblindcheck,
     testthat (>= 3.0.0)
-URL: https://jan-yegi.github.io/peRsian/
+URL: https://jan-yegi.github.io/peRsian/,
+    https://github.com/jan-yegi/peRsian
 VignetteBuilder: knitr
 Config/testthat/edition: 3
