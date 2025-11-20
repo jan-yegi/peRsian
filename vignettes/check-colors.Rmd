@@ -2,7 +2,7 @@
 title: "Analysis of Palette Colors"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{check-colors}
+  %\VignetteIndexEntry{Analysis of Palette Colors}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
