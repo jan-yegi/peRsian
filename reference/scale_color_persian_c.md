@@ -6,9 +6,9 @@ in ggplot2.
 ## Usage
 
 ``` r
-scale_color_persian_c(name, direction = 1, ...)
+scale_color_persian_c(name, direction = 1, n = 2, selection = "evenly", ...)
 
-scale_colour_persian_c(name, direction = 1, ...)
+scale_colour_persian_c(name, direction = 1, n = 2, selection = "evenly", ...)
 ```
 
 ## Arguments
@@ -26,6 +26,15 @@ scale_colour_persian_c(name, direction = 1, ...)
   Sets the order of colors in the scale. If -1, the order of colors is
   reversed.
 
+- n:
+
+  Number of colors desired. Empty or -1 for all colors.
+
+- selection:
+
+  For discrete palettes, either "sequential" (default, selects adjacent
+  colors) or "evenly" (maximizes distance between selected colors).
+
 - ...:
 
   Additional arguments passed to
@@ -39,7 +48,8 @@ A ggplot2 scale object.
 
 ``` r
 library(ggplot2)
-ggplot(diamonds, aes(carat, price, color = depth)) +
-  geom_point() +
-  scale_color_persian_c("tehran")
+ggplot(enamel, aes(x = group, y = z_mean, color = z_sd)) +
+  geom_segment(aes(x = group, xend = group, y = 0, yend = z_mean), linewidth = 1) +
+  geom_point(size = 5) +
+  scale_color_persian_c("isfahan")
 ```

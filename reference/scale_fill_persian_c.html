@@ -41,7 +41,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">scale_fill_persian_c</span><span class="op">(</span><span class="va">name</span>, direction <span class="op">=</span> <span class="fl">1</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">scale_fill_persian_c</span><span class="op">(</span><span class="va">name</span>, direction <span class="op">=</span> <span class="fl">1</span>, n <span class="op">=</span> <span class="fl">2</span>, selection <span class="op">=</span> <span class="st">"evenly"</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -60,6 +60,15 @@ See <code><a href="persian_palettes.html">persian_palettes</a></code> for all av
 of colors is reversed.</p></dd>
 
 
+<dt id="arg-n">n<a class="anchor" aria-label="anchor" href="#arg-n"></a></dt>
+<dd><p>Number of colors desired. Empty or -1 for all colors.</p></dd>
+
+
+<dt id="arg-selection">selection<a class="anchor" aria-label="anchor" href="#arg-selection"></a></dt>
+<dd><p>For discrete palettes, either "sequential" (default, selects adjacent colors)
+or "evenly" (maximizes distance between selected colors).</p></dd>
+
+
 <dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
 <dd><p>Additional arguments passed to <code><a href="https://ggplot2.tidyverse.org/reference/scale_gradient.html" class="external-link">scale_fill_gradientn</a></code>.</p></dd>
 
@@ -72,9 +81,9 @@ of colors is reversed.</p></dd>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">diamonds</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">carat</span>, y <span class="op">=</span> <span class="va">price</span>, z <span class="op">=</span> <span class="va">depth</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/stat_summary_2d.html" class="external-link">stat_summary_2d</a></span><span class="op">(</span>fun <span class="op">=</span> <span class="va">mean</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span>  <span class="fu">scale_fill_persian_c</span><span class="op">(</span><span class="st">"tehran"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">enamel</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">group</span>, y <span class="op">=</span> <span class="va">ld_mean</span>, fill <span class="op">=</span> <span class="va">ld_sd</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu">scale_fill_persian_c</span><span class="op">(</span><span class="st">"fery"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="scale_fill_persian_c-1.png" alt="" width="700" height="433"></span>
 </code></pre></div>
     </div>

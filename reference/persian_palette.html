@@ -44,8 +44,8 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">persian_palette</span><span class="op">(</span></span>
 <span>  <span class="va">name</span>,</span>
 <span>  <span class="va">n</span>,</span>
-<span>  type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"discrete"</span>, <span class="st">"continuous"</span><span class="op">)</span>,</span>
-<span>  direction <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="op">-</span><span class="fl">1</span><span class="op">)</span></span>
+<span>  direction <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="op">-</span><span class="fl">1</span><span class="op">)</span>,</span>
+<span>  selection <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"sequential"</span>, <span class="st">"evenly"</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -58,17 +58,17 @@
 
 
 <dt id="arg-n">n<a class="anchor" aria-label="anchor" href="#arg-n"></a></dt>
-<dd><p>Number of colors desired.</p></dd>
-
-
-<dt id="arg-type">type<a class="anchor" aria-label="anchor" href="#arg-type"></a></dt>
-<dd><p>Either "continuous" or "discrete". Use continuous if you want
-to automatically interpolate between colours</p></dd>
+<dd><p>Number of colors desired. Empty or -1 for all colors.</p></dd>
 
 
 <dt id="arg-direction">direction<a class="anchor" aria-label="anchor" href="#arg-direction"></a></dt>
 <dd><p>Sets the order of colors in the palette. If 1, the default,
 colors are as output in the palette. If -1, the order of colors is reversed.</p></dd>
+
+
+<dt id="arg-selection">selection<a class="anchor" aria-label="anchor" href="#arg-selection"></a></dt>
+<dd><p>For discrete palettes, either "sequential" (default, selects adjacent colors)
+or "evenly" (maximizes distance between selected colors).</p></dd>
 
 </dl></div>
     <div class="section level2">

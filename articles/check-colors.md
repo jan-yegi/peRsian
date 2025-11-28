@@ -89,10 +89,10 @@ for(palette_name in names(persian_palettes)) {
 
 | name         |   n | tolerance | ncp | ndcp | min_dist | mean_dist | max_dist |
 |:-------------|----:|----------:|----:|-----:|---------:|----------:|---------:|
-| normal       |   7 |      7.38 |  21 |   21 |     7.38 |     35.31 |    63.61 |
-| deuteranopia |   7 |      7.38 |  21 |   19 |     6.26 |     30.91 |    58.16 |
-| protanopia   |   7 |      7.38 |  21 |   20 |     6.40 |     31.16 |    59.16 |
-| tritanopia   |   7 |      7.38 |  21 |   21 |     8.42 |     34.23 |    60.90 |
+| normal       |   6 |     17.68 |  15 |   15 |    17.68 |     35.81 |    59.96 |
+| deuteranopia |   6 |     17.68 |  15 |   12 |     6.26 |     31.66 |    53.51 |
+| protanopia   |   6 |     17.68 |  15 |   12 |     8.04 |     31.54 |    54.06 |
+| tritanopia   |   6 |     17.68 |  15 |   13 |     8.42 |     35.05 |    60.43 |
 
 ### munich
 
@@ -133,10 +133,10 @@ for(palette_name in names(persian_palettes)) {
 
 | name         |   n | tolerance | ncp | ndcp | min_dist | mean_dist | max_dist |
 |:-------------|----:|----------:|----:|-----:|---------:|----------:|---------:|
-| normal       |   6 |      9.23 |  15 |   15 |     9.23 |     27.88 |    66.85 |
-| deuteranopia |   6 |      9.23 |  15 |   14 |     7.33 |     27.79 |    67.68 |
-| protanopia   |   6 |      9.23 |  15 |   14 |     7.55 |     26.84 |    65.37 |
-| tritanopia   |   6 |      9.23 |  15 |   14 |     6.79 |     28.26 |    67.36 |
+| normal       |   5 |     13.89 |  10 |   10 |    13.89 |     30.28 |    66.85 |
+| deuteranopia |   5 |     13.89 |  10 |    9 |    12.26 |     30.30 |    67.68 |
+| protanopia   |   5 |     13.89 |  10 |    9 |    12.69 |     29.44 |    65.37 |
+| tritanopia   |   5 |     13.89 |  10 |   10 |    15.66 |     30.42 |    67.36 |
 
 ### reyhaneh
 
@@ -155,10 +155,10 @@ for(palette_name in names(persian_palettes)) {
 
 | name         |   n | tolerance | ncp | ndcp | min_dist | mean_dist | max_dist |
 |:-------------|----:|----------:|----:|-----:|---------:|----------:|---------:|
-| normal       |  10 |      6.76 |  45 |   45 |     6.76 |     32.01 |    57.08 |
-| deuteranopia |  10 |      6.76 |  45 |   43 |     6.27 |     25.89 |    59.34 |
-| protanopia   |  10 |      6.76 |  45 |   45 |     6.81 |     26.25 |    53.89 |
-| tritanopia   |  10 |      6.76 |  45 |   44 |     6.48 |     31.09 |    60.65 |
+| normal       |   8 |     10.24 |  28 |   28 |    10.24 |     32.75 |    51.84 |
+| deuteranopia |   8 |     10.24 |  28 |   26 |     6.27 |     26.29 |    54.16 |
+| protanopia   |   8 |     10.24 |  28 |   26 |     8.72 |     25.71 |    48.48 |
+| tritanopia   |   8 |     10.24 |  28 |   25 |     8.07 |     33.11 |    56.35 |
 
 ### pooran
 
@@ -166,10 +166,10 @@ for(palette_name in names(persian_palettes)) {
 
 | name         |   n | tolerance | ncp | ndcp | min_dist | mean_dist | max_dist |
 |:-------------|----:|----------:|----:|-----:|---------:|----------:|---------:|
-| normal       |   7 |      9.51 |  21 |   21 |     9.51 |     33.26 |    54.31 |
-| deuteranopia |   7 |      9.51 |  21 |   20 |     7.32 |     27.88 |    57.05 |
-| protanopia   |   7 |      9.51 |  21 |   19 |     7.44 |     26.16 |    51.68 |
-| tritanopia   |   7 |      9.51 |  21 |   21 |     9.93 |     34.65 |    66.67 |
+| normal       |   6 |     14.38 |  15 |   15 |    14.38 |     35.29 |    54.31 |
+| deuteranopia |   6 |     14.38 |  15 |   14 |    12.71 |     30.26 |    57.05 |
+| protanopia   |   6 |     14.38 |  15 |   13 |    11.63 |     28.50 |    51.68 |
+| tritanopia   |   6 |     14.38 |  15 |   14 |    11.93 |     36.11 |    66.67 |
 
 ### hooshang
 
@@ -298,20 +298,20 @@ distinguishable and which ones may need more work.
 persian_scores_df |>
   filter(name == "normal") |>
   arrange(desc(min_dist))
-#>     palette   name  n tolerance ncp ndcp  min_dist mean_dist max_dist
-#> 1  hooshang normal  4  5.339964   6    6 17.240440  33.19147 48.85390
-#> 2    munich normal  7  5.339964  21   21 16.622315  40.89513 93.82743
-#> 3      fery normal  8  5.339964  28   28 15.316886  44.03096 81.71196
-#> 4    tehran normal  8  5.339964  28   28 14.660184  37.52704 71.85012
-#> 5     leyli normal  9  5.339964  36   36 13.121273  28.13639 49.32902
-#> 6    tabriz normal  6  5.339964  15   15 11.756631  27.51236 42.57928
-#> 7  reyhaneh normal  4  5.339964   6    6 10.923154  22.65976 33.38325
-#> 8    floral normal  5  5.339964  10   10 10.698235  22.98735 31.90445
-#> 9   hamburg normal  8  5.339964  28   28 10.067141  45.90776 81.61558
-#> 10   pooran normal  7  5.339964  21   21  9.510745  33.25645 54.31265
-#> 11    abbas normal  6  5.339964  15   15  9.226046  27.88051 66.84959
-#> 12  isfahan normal  7  5.339964  21   21  7.383788  35.30816 63.61494
-#> 13   berlin normal 10  5.339964  45   45  6.755299  32.00604 57.07781
+#>     palette   name n tolerance ncp ndcp min_dist mean_dist max_dist
+#> 1   isfahan normal 6  5.339964  15   15 17.68255  35.80945 59.96357
+#> 2  hooshang normal 4  5.339964   6    6 17.24044  33.19147 48.85390
+#> 3    munich normal 7  5.339964  21   21 16.62231  40.89513 93.82743
+#> 4      fery normal 8  5.339964  28   28 15.31689  44.03096 81.71196
+#> 5    tehran normal 8  5.339964  28   28 14.66018  37.52704 71.85012
+#> 6    pooran normal 6  5.339964  15   15 14.38322  35.29478 54.31265
+#> 7     abbas normal 5  5.339964  10   10 13.88681  30.27786 66.84959
+#> 8     leyli normal 9  5.339964  36   36 13.12127  28.13639 49.32902
+#> 9    tabriz normal 6  5.339964  15   15 11.75663  27.51236 42.57928
+#> 10 reyhaneh normal 4  5.339964   6    6 10.92315  22.65976 33.38325
+#> 11   floral normal 5  5.339964  10   10 10.69823  22.98735 31.90445
+#> 12   berlin normal 8  5.339964  28   28 10.24284  32.74987 51.84005
+#> 13  hamburg normal 8  5.339964  28   28 10.06714  45.90776 81.61558
 ```
 
 Palettes which may need adjustments:
@@ -320,18 +320,18 @@ Palettes which may need adjustments:
 persian_scores_df |>
   filter(name == "normal") |>
   arrange(min_dist)
-#>     palette   name  n tolerance ncp ndcp  min_dist mean_dist max_dist
-#> 1    berlin normal 10  5.339964  45   45  6.755299  32.00604 57.07781
-#> 2   isfahan normal  7  5.339964  21   21  7.383788  35.30816 63.61494
-#> 3     abbas normal  6  5.339964  15   15  9.226046  27.88051 66.84959
-#> 4    pooran normal  7  5.339964  21   21  9.510745  33.25645 54.31265
-#> 5   hamburg normal  8  5.339964  28   28 10.067141  45.90776 81.61558
-#> 6    floral normal  5  5.339964  10   10 10.698235  22.98735 31.90445
-#> 7  reyhaneh normal  4  5.339964   6    6 10.923154  22.65976 33.38325
-#> 8    tabriz normal  6  5.339964  15   15 11.756631  27.51236 42.57928
-#> 9     leyli normal  9  5.339964  36   36 13.121273  28.13639 49.32902
-#> 10   tehran normal  8  5.339964  28   28 14.660184  37.52704 71.85012
-#> 11     fery normal  8  5.339964  28   28 15.316886  44.03096 81.71196
-#> 12   munich normal  7  5.339964  21   21 16.622315  40.89513 93.82743
-#> 13 hooshang normal  4  5.339964   6    6 17.240440  33.19147 48.85390
+#>     palette   name n tolerance ncp ndcp min_dist mean_dist max_dist
+#> 1   hamburg normal 8  5.339964  28   28 10.06714  45.90776 81.61558
+#> 2    berlin normal 8  5.339964  28   28 10.24284  32.74987 51.84005
+#> 3    floral normal 5  5.339964  10   10 10.69823  22.98735 31.90445
+#> 4  reyhaneh normal 4  5.339964   6    6 10.92315  22.65976 33.38325
+#> 5    tabriz normal 6  5.339964  15   15 11.75663  27.51236 42.57928
+#> 6     leyli normal 9  5.339964  36   36 13.12127  28.13639 49.32902
+#> 7     abbas normal 5  5.339964  10   10 13.88681  30.27786 66.84959
+#> 8    pooran normal 6  5.339964  15   15 14.38322  35.29478 54.31265
+#> 9    tehran normal 8  5.339964  28   28 14.66018  37.52704 71.85012
+#> 10     fery normal 8  5.339964  28   28 15.31689  44.03096 81.71196
+#> 11   munich normal 7  5.339964  21   21 16.62231  40.89513 93.82743
+#> 12 hooshang normal 4  5.339964   6    6 17.24044  33.19147 48.85390
+#> 13  isfahan normal 6  5.339964  15   15 17.68255  35.80945 59.96357
 ```

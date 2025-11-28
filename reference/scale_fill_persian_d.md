@@ -38,7 +38,7 @@ A ggplot2 scale object.
 
 ``` r
 library(ggplot2)
-ggplot(diamonds, aes(cut, price, fill = cut)) +
-  geom_boxplot() +
-  scale_fill_persian_d("munich")
+ggplot(enamel, aes(x = group, y = ld_mean, fill = group)) +
+  geom_col() +
+  scale_fill_persian_d("leyli")
 ```

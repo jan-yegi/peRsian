@@ -49,12 +49,58 @@ persian_palette(names(persian_palettes)[1])
 ``` r
 library(ggplot2)
 
-ggplot(diamonds, aes(carat, price, color = cut)) +
-  geom_point() +
-  scale_color_persian_d("fery")
+ggplot(data = enamel) +
+  aes(
+    x = group,
+    y = ld_mean,
+    fill = group
+  ) +
+  geom_col(
+    width = 0.6
+  ) +
+  geom_errorbar(
+    aes(ymin = ld_mean - ld_sd, ymax = ld_mean + ld_sd),
+    width = 0.2
+  ) +
+  labs(
+    title = "Depth of Demineralisation in Enamel",
+    subtitle = "in humans, sharks and humans with a daily rinse of sodium fluoride",
+    caption = "Source: Ögaard et al. (1988)",
+    x = "",
+    y = "Depth in μm",
+    fill = "Group"
+  ) +
+  scale_fill_persian("leyli")
 ```
 
 ![](reference/figures/README/fig-unnamed-chunk-2-1.png)
+
+``` r
+ggplot(data = enamel) +
+  aes(
+    x = group,
+    y = z_mean,
+    fill = group
+  ) +
+  geom_col(color = "black") +
+  geom_errorbar(
+    aes(ymin = z_mean - z_sd, ymax = z_mean + z_sd),
+    width = 0.2
+  ) +
+  labs(
+    title = "Mineral Loss in Enamel",
+    subtitle = "in humans, sharks and humans with a daily rinse of sodium fluoride",
+    caption = "Source: Ögaard et al. (1988)",
+    x = "",
+    y = "Mineral Loss (Z) in Vol % μm",
+    fill = "Group"
+  ) +
+  coord_flip() +
+  theme_minimal() +
+  scale_fill_persian("hamburg", direction = -1)
+```
+
+![](reference/figures/README/fig-unnamed-chunk-3-1.png)
 
 We also include a list of colorblind-safe palettes by checking for
 thresholds with the package `colorblindcheck`. You can read more about

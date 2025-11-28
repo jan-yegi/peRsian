@@ -6,7 +6,7 @@ in ggplot2.
 ## Usage
 
 ``` r
-scale_fill_persian_c(name, direction = 1, ...)
+scale_fill_persian_c(name, direction = 1, n = 2, selection = "evenly", ...)
 ```
 
 ## Arguments
@@ -24,6 +24,15 @@ scale_fill_persian_c(name, direction = 1, ...)
   Sets the order of colors in the scale. If -1, the order of colors is
   reversed.
 
+- n:
+
+  Number of colors desired. Empty or -1 for all colors.
+
+- selection:
+
+  For discrete palettes, either "sequential" (default, selects adjacent
+  colors) or "evenly" (maximizes distance between selected colors).
+
 - ...:
 
   Additional arguments passed to
@@ -37,7 +46,7 @@ A ggplot2 scale object.
 
 ``` r
 library(ggplot2)
-ggplot(diamonds, aes(x = carat, y = price, z = depth)) +
-  stat_summary_2d(fun = mean) +
-  scale_fill_persian_c("tehran")
+ggplot(enamel, aes(x = group, y = ld_mean, fill = ld_sd)) +
+  geom_col() +
+  scale_fill_persian_c("fery")
 ```

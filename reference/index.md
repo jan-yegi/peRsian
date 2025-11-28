@@ -2,6 +2,8 @@
 
 ## All functions
 
+- [`enamel`](https://jan-yegi.github.io/peRsian/reference/enamel.md) :
+  Enamel Microstructure Data
 - [`persian_palette()`](https://jan-yegi.github.io/peRsian/reference/persian_palette.md)
   : A Palette Generator Based on Persian Art
 - [`persian_palettes`](https://jan-yegi.github.io/peRsian/reference/persian_palettes.md)
