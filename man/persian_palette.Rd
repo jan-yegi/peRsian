@@ -8,19 +8,23 @@ persian_palette(
   name,
   n,
   type = c("discrete", "continuous"),
-  direction = c(1, -1)
+  direction = c(1, -1),
+  selection = c("sequential", "evenly")
 )
 }
 \arguments{
 \item{name}{Name of desired palette.}
 
-\item{n}{Number of colors desired.}
+\item{n}{Number of colors desired. Empty or -1 for all colors.}
 
 \item{type}{Either "continuous" or "discrete". Use continuous if you want
 to automatically interpolate between colours}
 
 \item{direction}{Sets the order of colors in the palette. If 1, the default,
 colors are as output in the palette. If -1, the order of colors is reversed.}
+
+\item{selection}{For discrete palettes, either "sequential" (default, selects adjacent colors)
+or "evenly" (maximizes distance between selected colors).}
 }
 \value{
 A vector of colours.
