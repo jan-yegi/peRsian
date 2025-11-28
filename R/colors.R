@@ -41,16 +41,13 @@ persian_palettes_colorblind_safe <- persian_palettes[persian_palette_names_color
 #'
 #' @param name Name of desired palette.
 #' @param n Number of colors desired. Empty or -1 for all colors.
-#' @param type Either "continuous" or "discrete". Use continuous if you want
-#'   to automatically interpolate between colours
 #' @param direction Sets the order of colors in the palette. If 1, the default,
 #'   colors are as output in the palette. If -1, the order of colors is reversed.
 #' @param selection For discrete palettes, either "sequential" (default, selects adjacent colors)
 #'   or "evenly" (maximizes distance between selected colors).
 #' @return A vector of colours.
 #' @export
-persian_palette <- function(name, n, type = c("discrete", "continuous"), direction = c(1, -1), selection = c("sequential", "evenly")) {
-  type <- match.arg(type)
+persian_palette <- function(name, n, direction = c(1, -1), selection = c("sequential", "evenly")) {
   selection <- match.arg(selection)
 
   pal <- persian_palettes[[name]]
@@ -61,7 +58,7 @@ persian_palette <- function(name, n, type = c("discrete", "continuous"), directi
     n <- length(pal)
   }
 
-  if (type == "discrete" && n > length(pal)) {
+  if (n > length(pal)) {
     stop("Number of requested colors greater than what palette can offer")
   }
 
@@ -73,17 +70,12 @@ persian_palette <- function(name, n, type = c("discrete", "continuous"), directi
     pal <- rev(pal)
   }
 
-  out <- switch(type,
-    continuous = grDevices::colorRampPalette(pal)(n),
-    discrete = {
-      if (selection == "evenly" && n < length(pal)) {
-        indices <- round(seq(1, length(pal), length.out = n))
-        pal[indices]
-      } else {
-        pal[1:n]
-      }
-    }
-  )
+  if (selection == "evenly" && n < length(pal)) {
+    indices <- round(seq(1, length(pal), length.out = n))
+    out <- pal[indices]
+  } else {
+    out <- pal[1:n]
+  }
   as.palette(out, name)
 }
 
