@@ -5,9 +5,9 @@
 \alias{scale_colour_persian_c}
 \title{Continuous Color Scale for Persian Palettes}
 \usage{
-scale_color_persian_c(name, direction = 1, ...)
+scale_color_persian_c(name, direction = 1, n = 2, selection = "evenly", ...)
 
-scale_colour_persian_c(name, direction = 1, ...)
+scale_colour_persian_c(name, direction = 1, n = 2, selection = "evenly", ...)
 }
 \arguments{
 \item{name}{Name of the Persian palette to use. Options include:
@@ -17,6 +17,11 @@ See \code{\link{persian_palettes}} for all available palette names.}
 
 \item{direction}{Sets the order of colors in the scale. If -1, the order
 of colors is reversed.}
+
+\item{n}{Number of colors desired. Empty or -1 for all colors.}
+
+\item{selection}{For discrete palettes, either "sequential" (default, selects adjacent colors)
+or "evenly" (maximizes distance between selected colors).}
 
 \item{...}{Additional arguments passed to \code{\link[ggplot2]{scale_color_gradientn}}.}
 }
@@ -28,7 +33,8 @@ Apply a continuous Persian color palette gradient to the color aesthetic in ggpl
 }
 \examples{
 library(ggplot2)
-ggplot(diamonds, aes(carat, price, color = depth)) +
-  geom_point() +
-  scale_color_persian_c("tehran")
+ggplot(enamel, aes(x = group, y = z_mean, color = z_sd)) +
+  geom_segment(aes(x = group, xend = group, y = 0, yend = z_mean), linewidth = 1) +
+  geom_point(size = 5) +
+  scale_color_persian_c("isfahan")
 }

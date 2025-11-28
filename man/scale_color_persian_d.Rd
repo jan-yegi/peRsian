@@ -34,7 +34,8 @@ Apply a discrete Persian color palette to the color aesthetic in ggplot2.
 }
 \examples{
 library(ggplot2)
-ggplot(diamonds, aes(carat, price, color = cut)) +
-  geom_point() +
-  scale_color_persian_d("fery")
+ggplot(enamel, aes(x = group, y = ld_mean, color = group)) +
+  geom_segment(aes(x = group, xend = group, y = 0, yend = ld_mean), linewidth = 1) +
+  geom_point(size = 4) +
+  scale_color_persian_d("isfahan")
 }

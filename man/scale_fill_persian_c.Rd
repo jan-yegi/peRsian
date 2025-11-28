@@ -4,7 +4,7 @@
 \alias{scale_fill_persian_c}
 \title{Continuous Fill Scale for Persian Palettes}
 \usage{
-scale_fill_persian_c(name, direction = 1, ...)
+scale_fill_persian_c(name, direction = 1, n = 2, selection = "evenly", ...)
 }
 \arguments{
 \item{name}{Name of the Persian palette to use. Options include:
@@ -14,6 +14,11 @@ See \code{\link{persian_palettes}} for all available palette names.}
 
 \item{direction}{Sets the order of colors in the scale. If -1, the order
 of colors is reversed.}
+
+\item{n}{Number of colors desired. Empty or -1 for all colors.}
+
+\item{selection}{For discrete palettes, either "sequential" (default, selects adjacent colors)
+or "evenly" (maximizes distance between selected colors).}
 
 \item{...}{Additional arguments passed to \code{\link[ggplot2]{scale_fill_gradientn}}.}
 }
@@ -25,7 +30,7 @@ Apply a continuous Persian color palette gradient to the fill aesthetic in ggplo
 }
 \examples{
 library(ggplot2)
-ggplot(diamonds, aes(x = carat, y = price, z = depth)) +
-  stat_summary_2d(fun = mean) +
-  scale_fill_persian_c("tehran")
+ggplot(enamel, aes(x = group, y = ld_mean, fill = ld_sd)) +
+  geom_col() +
+  scale_fill_persian_c("fery")
 }

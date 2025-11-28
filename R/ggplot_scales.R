@@ -13,9 +13,10 @@
 #' @export
 #' @examples
 #' library(ggplot2)
-#' ggplot(diamonds, aes(carat, price, color = cut)) +
-#'   geom_point() +
-#'   scale_color_persian_d("fery")
+#' ggplot(enamel, aes(x = group, y = ld_mean, color = group)) +
+#'   geom_segment(aes(x = group, xend = group, y = 0, yend = ld_mean), linewidth = 1) +
+#'   geom_point(size = 4) +
+#'   scale_color_persian_d("isfahan")
 scale_color_persian_d <- function(name, direction = 1, ...) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Package 'ggplot2' is required for this function.", call. = FALSE)
@@ -41,9 +42,9 @@ scale_color_persian_d <- function(name, direction = 1, ...) {
 #' @export
 #' @examples
 #' library(ggplot2)
-#' ggplot(diamonds, aes(cut, price, fill = cut)) +
-#'   geom_boxplot() +
-#'   scale_fill_persian_d("munich")
+#' ggplot(enamel, aes(x = group, y = ld_mean, fill = group)) +
+#'   geom_col() +
+#'   scale_fill_persian_d("leyli")
 scale_fill_persian_d <- function(name, direction = 1, ...) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Package 'ggplot2' is required for this function.", call. = FALSE)
@@ -65,20 +66,24 @@ scale_fill_persian_d <- function(name, direction = 1, ...) {
 #'   See \code{\link{persian_palettes}} for all available palette names.
 #' @param direction Sets the order of colors in the scale. If -1, the order
 #'   of colors is reversed.
+#' @param n Number of colors desired. Empty or -1 for all colors.
+#' @param selection For discrete palettes, either "sequential" (default, selects adjacent colors)
+#'   or "evenly" (maximizes distance between selected colors).
 #' @param ... Additional arguments passed to \code{\link[ggplot2]{scale_color_gradientn}}.
 #' @return A ggplot2 scale object.
 #' @export
 #' @examples
 #' library(ggplot2)
-#' ggplot(diamonds, aes(carat, price, color = depth)) +
-#'   geom_point() +
-#'   scale_color_persian_c("tehran")
-scale_color_persian_c <- function(name, direction = 1, ...) {
+#' ggplot(enamel, aes(x = group, y = z_mean, color = z_sd)) +
+#'   geom_segment(aes(x = group, xend = group, y = 0, yend = z_mean), linewidth = 1) +
+#'   geom_point(size = 5) +
+#'   scale_color_persian_c("isfahan")
+scale_color_persian_c <- function(name, direction = 1, n = 2, selection = "evenly", ...) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Package 'ggplot2' is required for this function.", call. = FALSE)
   }
   ggplot2::scale_color_gradientn(
-    colors = persian_palette(name = name, direction = direction),
+    colors = persian_palette(name = name, n = n, direction = direction, selection = selection),
     ...
   )
 }
@@ -93,20 +98,23 @@ scale_color_persian_c <- function(name, direction = 1, ...) {
 #'   See \code{\link{persian_palettes}} for all available palette names.
 #' @param direction Sets the order of colors in the scale. If -1, the order
 #'   of colors is reversed.
+#' @param n Number of colors desired. Empty or -1 for all colors.
+#' @param selection For discrete palettes, either "sequential" (default, selects adjacent colors)
+#'   or "evenly" (maximizes distance between selected colors).
 #' @param ... Additional arguments passed to \code{\link[ggplot2]{scale_fill_gradientn}}.
 #' @return A ggplot2 scale object.
 #' @export
 #' @examples
 #' library(ggplot2)
-#' ggplot(diamonds, aes(x = carat, y = price, z = depth)) +
-#'   stat_summary_2d(fun = mean) +
-#'   scale_fill_persian_c("tehran")
-scale_fill_persian_c <- function(name, direction = 1, ...) {
+#' ggplot(enamel, aes(x = group, y = ld_mean, fill = ld_sd)) +
+#'   geom_col() +
+#'   scale_fill_persian_c("fery")
+scale_fill_persian_c <- function(name, direction = 1, n = 2, selection = "evenly", ...) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop("Package 'ggplot2' is required for this function.", call. = FALSE)
   }
   ggplot2::scale_fill_gradientn(
-    colors = persian_palette(name = name, direction = direction),
+    colors = persian_palette(name = name, n = n, direction = direction, selection = selection),
     ...
   )
 }
