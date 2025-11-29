@@ -1,6 +1,6 @@
 Package: peRsian
 Title: A Collection of Color Palettes Inspired by Persian Carpets.
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: c(
         person("Jan", "Simson", , "persian-pkg@simson.io", role = c("aut", "cre")),
         person("Yeganeh", "Khazaei", , "persian-pkg@simson.io", role = c("aut"))
@@ -21,6 +21,6 @@ URL: https://jan-yegi.github.io/peRsian/,
     https://github.com/jan-yegi/peRsian
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-Depends: 
+Depends:
     R (>= 3.5)
 LazyData: true
