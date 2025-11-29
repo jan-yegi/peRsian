@@ -92,11 +92,11 @@ ggplot(data = enamel) +
     subtitle = "in humans, sharks and humans with a daily rinse of sodium fluoride",
     caption = "Source: Ögaard et al. (1988)",
     x = "",
-    y = "Mineral Loss (Z) in Vol % μm",
-    fill = "Group"
+    y = "Mineral Loss (Z) in Vol % μm"
   ) +
   coord_flip() +
   theme_minimal() +
+  theme(legend.position = "none") +
   scale_fill_persian("hamburg", direction = -1)
 ```
 
