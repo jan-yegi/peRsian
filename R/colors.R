@@ -98,4 +98,6 @@ print.palette <- function(x, ...) {
   half_rect_size <- 0.12
   graphics::rect(0, 1-half_rect_size, n + 1, 1+half_rect_size, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
   graphics::text((n + 1) / 2, 1, labels = attr(x, "name"), cex = 1.4, family = "serif")
+
+  graphics::rect(0.5, 0.6, n + 0.5, 1.4, border = "black", lwd = 5)
 }
