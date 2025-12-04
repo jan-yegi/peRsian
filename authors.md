@@ -9,7 +9,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/jan-yegi/peRsian/blob/v0.1.0/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/jan-yegi/peRsian/blob/main/DESCRIPTION)
 
 Simson J, Khazaei Y (2025). *peRsian: A Collection of Color Palettes
 Inspired by Persian Carpets.*. R package version 0.1.0,
